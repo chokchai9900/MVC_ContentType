@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "uUC8HfGRjxOwNHq3t8PoRrF6NtJ+eAh9o69S5AkKFi4r4G3edFZVS0i8KBQTWvXGYPwmH+g4S2u+4RBn3Zu7pw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BloodRainz\\source\\repos\\MVC_ContentType\\MVC_ContentType\\MVC_ContentType.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\mimemapping\\1.0.1.37\\mimemapping.1.0.1.37.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512",
+    "C:\\Users\\BloodRainz\\.nuget\\packages\\system.security.cryptography.pkcs\\5.0.1\\system.security.cryptography.pkcs.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -29,7 +29,6 @@ namespace MVC_ContentType
             var provider = new FileExtensionContentTypeProvider();
 
             services.AddSingleton<IMimeMappingService>(new MimeMappingService(provider));
-            provider.Mappings.Add(".dnct", "application/someType");
 
             services.AddControllersWithViews();
             services.AddSwaggerGen();

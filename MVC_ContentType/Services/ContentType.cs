@@ -299,7 +299,77 @@ namespace MVC_ContentType.Services
                     Extension = "TXT",
                     Mime = "text/plain"
                 },
-
+                //excutable
+                new ContentTypeModel
+                {
+                    Name = "DMG",
+                    ByteHeaders = new byte[] {0x6B, 0x6F, 0x6C, 0x79},
+                    Extension = "DMG",
+                    Mime = "application/x-apple-diskimage"
+                },
+                new ContentTypeModel
+                {
+                    Name = "EXE",
+                    ByteHeaders = new byte[] {0x5A, 0x4D},
+                    Extension = "EXE",
+                    Mime = "application/x-msdownload"
+                },
+                new ContentTypeModel
+                {
+                    Name = "DLL",
+                    ByteHeaders = new byte[] {0x4D, 0x5A},
+                    Extension = "DLL",
+                    Mime = "application/x-msdos-program"
+                },
+                new ContentTypeModel
+                {
+                    Name = "DEX",
+                    ByteHeaders = new byte[] {0x64, 0x65, 0x78, 0x0A, 0x30, 0x33, 0x35, 0x00},
+                    Extension = "DEX",
+                    Mime = "application/octet-stream"
+                },
+                new ContentTypeModel
+                {
+                    Name = "DOS",
+                    ByteHeaders = new byte[] {0x4D, 0x5A},
+                    Extension = "DOS",
+                    Mime = "application/octet-stream"
+                },
+                new ContentTypeModel
+                {
+                    Name = "APK",
+                    ByteHeaders = new byte[] {0x50, 0x4B, 0x03, 0x04},
+                    Extension = "APK",
+                    Mime = "application/vnd.android.package-archive"
+                },
+                new ContentTypeModel
+                {
+                    Name = "MSI",
+                    ByteHeaders = new byte[] {0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1},
+                    Extension = "MSI",
+                    Mime = "application/x-msi"
+                },
+                new ContentTypeModel
+                {
+                    Name = "O",
+                    ByteHeaders = new byte[] {0xFE, 0xED, 0xFA, 0xCE} ,
+                    Extension = "O",
+                    Mime = "com.apple.mach-o-binary"
+                },
+                new ContentTypeModel
+                {
+                    Name = "DYLIB",
+                    ByteHeaders = new byte[] {0xFE, 0xED, 0xFA, 0xCE} ,
+                    Extension = "DYLIB",
+                    Mime = "com.apple.mach-o-binary"
+                },
+                new ContentTypeModel
+                {
+                    Name = "BUNDLE",
+                    ByteHeaders = new byte[] {0xFE, 0xED, 0xFA, 0xCE} ,
+                    Extension = "BUNDLE",
+                    Mime = "com.apple.mach-o-binary"
+                },
             };
 
             return data;

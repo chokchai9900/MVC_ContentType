@@ -53,7 +53,7 @@ namespace MVC_ContentType.Controllers
                 getName = url.Split("%2F").Last();
             }
             var getbyte = _mimeMappingService.FileToByteArray(url);
-            return _mimeMappingService.GetMimeType(getbyte,getName);
+            return _mimeMappingService.GetMimeType(getbyte,getName).Mime;
         }
     }
 }

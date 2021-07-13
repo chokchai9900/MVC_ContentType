@@ -33,7 +33,7 @@ namespace MVC_ContentType.Services
             return contentType;
         }
 
-        public string GetMimeType(byte[] file, string fileName)
+        public ContentTypeModel GetMimeType(byte[] file, string fileName)
         {
             var mime = "application/octet-stream"; //DEFAULT UNKNOWN MIME TYPE
             //var x = ContentInfo.GetContentType(file);
@@ -45,31 +45,20 @@ namespace MVC_ContentType.Services
 
             if (string.IsNullOrWhiteSpace(fileName))
             {
-                return mime;
+                return null;
             }
 
-            string extension = Path.GetExtension(fileName) == null
+            string  x = Path.GetExtension(fileName) == null
                                ? string.Empty
                                : Path.GetExtension(fileName).ToUpper();
 
             var result = dataset.Find(it => file.Take(it.ByteHeaders.Length).SequenceEqual(it.ByteHeaders));
 
-
-            return mime;
+            return result;
         }
 
         public byte[] FileToByteArray(string url)
         {
-            //using (FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read))
-            //{
-            //    // Create a byte array of file stream length
-            //    byte[] bytes = System.IO.File.ReadAllBytes(filename);
-            //    //Read block of bytes from stream into the byte array
-            //    fs.Read(bytes, 0, System.Convert.ToInt32(fs.Length));
-            //    //Close the File Stream
-            //    fs.Close();
-            //    return bytes; //return the byte data
-            //}
             var Client = new WebClient();
             var trueUrl = HttpUtility.UrlDecode(url);
             return Client.DownloadData(trueUrl);

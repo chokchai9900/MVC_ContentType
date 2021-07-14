@@ -49,11 +49,11 @@ namespace MVC_ContentType.Services
                 return null;
             }
 
-            string  x = Path.GetExtension(fileName) == null
+            string Extension = Path.GetExtension(fileName) == null
                                ? string.Empty
                                : Path.GetExtension(fileName).ToUpper();
 
-            var result = dataset.Find(it => file.Take(it.ByteHeaders.Length).SequenceEqual(it.ByteHeaders));
+            var result = dataset.Find(it => file.Take(it.ByteHeaders.Length).SequenceEqual(it.ByteHeaders)&& $".{it.Extension.ToUpper()}" == Extension);
 
             return result == null ? mime : result;
             

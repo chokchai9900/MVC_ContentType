@@ -26,9 +26,7 @@ namespace MVC_ContentType
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var provider = new FileExtensionContentTypeProvider();
-
-            services.AddSingleton<IMimeMappingService>(new MimeMappingService(provider));
+            services.AddSingleton<IMimeMappingService>();
 
             services.AddControllersWithViews();
             services.AddSwaggerGen();

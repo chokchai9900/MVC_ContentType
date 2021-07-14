@@ -248,7 +248,7 @@ namespace MVC_ContentType.Services
                     Name = "JPG",
                     ByteHeaders = new byte[] { 0xFF, 0xD8, 0xFF },
                     Extension = "JPG",
-                    Mime = "image/jpg"
+                    Mime = "image/jpeg"
                 },
                 new ContentTypeModel
                 {

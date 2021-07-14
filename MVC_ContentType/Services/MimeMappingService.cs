@@ -14,18 +14,12 @@ namespace MVC_ContentType.Services
 {
     public class MimeMappingService : IMimeMappingService
     {
-        private readonly FileExtensionContentTypeProvider _contentTypeProvider;
-        
 
-        public MimeMappingService(FileExtensionContentTypeProvider contentTypeProvider)
-        {
-            _contentTypeProvider = contentTypeProvider;
-        }
         public string Map(string fileName)
         {
             string contentType;
-            var x = _contentTypeProvider.Mappings;
-            if (!_contentTypeProvider.TryGetContentType(fileName, out contentType))
+            var provider = new FileExtensionContentTypeProvider();
+            if (!provider.TryGetContentType(fileName, out contentType))
             {
                 //if can't find content type ,set content type to "application/octet-stream". 
                 contentType = "application/octet-stream";
@@ -35,7 +29,14 @@ namespace MVC_ContentType.Services
 
         public ContentTypeModel GetMimeType(byte[] file, string fileName)
         {
-            var mime = "application/octet-stream"; //DEFAULT UNKNOWN MIME TYPE
+            var mime = new ContentTypeModel()
+            {
+                Name = "",
+                Extension = "",
+                ByteHeaders = new byte[] { },
+                Mime = "application/octet-stream"
+            };
+            //var mime = "application/octet-stream"; //DEFAULT UNKNOWN MIME TYPE
             //var x = ContentInfo.GetContentType(file);
             //string mimeType = MimeUtility.GetMimeMapping(fileName);
             //var f = new FileInfo(fileName);
@@ -54,7 +55,8 @@ namespace MVC_ContentType.Services
 
             var result = dataset.Find(it => file.Take(it.ByteHeaders.Length).SequenceEqual(it.ByteHeaders));
 
-            return result;
+            return result == null ? mime : result;
+            
         }
 
         public byte[] FileToByteArray(string url)

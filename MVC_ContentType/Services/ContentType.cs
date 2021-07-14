@@ -218,93 +218,93 @@ namespace MVC_ContentType.Services
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0x01},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0x5E},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0x9C},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0xDA},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0x20},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0x7D},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zlib",
+                    Name = "ZLIB",
                     ByteHeaders = new byte[] {0x78, 0xBB},
-                    Extension = "zlib",
-                    Mime = "application/zlib"
+                    Extension = "ZLIB",
+                    Mime = "application/ZLIB"
                 },
                 new ContentTypeModel
                 {
-                    Name = "lzfse",
+                    Name = "LZFSE",
                     ByteHeaders = new byte[] {0x62, 0x76, 0x78, 0x32},
-                    Extension = "lzfse",
+                    Extension = "LZFSE",
                     Mime = "application/octet-stream"
                 },
                 new ContentTypeModel
                 {
-                    Name = "zst",
+                    Name = "ZST",
                     ByteHeaders = new byte[] {0x52, 0x53, 0x56, 0x4B, 0x44, 0x41, 0x54, 0x41},
-                    Extension = "zst",
+                    Extension = "ZST",
                     Mime = "application/zstd"
                 },
                 new ContentTypeModel
                 {
-                    Name = "ace",
+                    Name = "ACE",
                     ByteHeaders = new byte[] {0x2A, 0x2A, 0x41, 0x43, 0x45, 0x2A, 0x2A},
-                    Extension = "ace",
+                    Extension = "ACE",
                     Mime = "application/x-ace-compressed"
                 },
                 new ContentTypeModel
                 {
-                    Name = "isz",
+                    Name = "ISZ",
                     ByteHeaders = new byte[] {0x49, 0x73, 0x5A, 0x21},
-                    Extension = "isz",
+                    Extension = "ISZ",
                     Mime = "application/x-iso9660-image"
                 },
                 new ContentTypeModel
                 {
-                    Name = "iso",
+                    Name = "ISO",
                     ByteHeaders = new byte[] {0x43, 0x44, 0x30, 0x30, 0x31},
-                    Extension = "iso",
+                    Extension = "ISO",
                     Mime = "application/x-iso9660-image"
                 },
                 new ContentTypeModel
                 {
-                    Name = "iso",
+                    Name = "ISO",
                     ByteHeaders = new byte[] {0x43, 0x44, 0x30, 0x30, 0x31},
-                    Extension = "iso",
+                    Extension = "ISO",
                     Mime = "application/x-iso9660-image"
                 },
                 new ContentTypeModel
